@@ -51,3 +51,6 @@ rust/signer/target
 
 # flapigen
 ffi/python/libs
+
+target
+Cargo.lock

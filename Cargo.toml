@@ -1,0 +1,6 @@
+[workspace]
+
+members = [
+	"ffi/rust/keriox_wrapper",
+	"rust/jolocom_native_utils",
+]

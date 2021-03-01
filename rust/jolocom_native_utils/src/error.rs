@@ -1,7 +1,7 @@
-use thiserror::Error;
 use base64::DecodeError;
-use universal_wallet::Error as UwError;
 use keri::error::Error as KeriError;
+use thiserror::Error;
+use universal_wallet::Error as UwError;
 
 #[derive(Error, Debug)]
 pub enum Error {

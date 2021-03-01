@@ -18,6 +18,7 @@ use serde::{Deserialize, Serialize};
 use serde_json;
 use std::convert::TryInto;
 use universal_wallet::{get_random, prelude::*, Error as UwError};
+pub mod wallet;
 
 #[derive(Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
