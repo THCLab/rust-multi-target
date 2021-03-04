@@ -1,3 +1,5 @@
+use std::fmt;
+
 use keri::{
     derivation::basic::Basic,
     prefix::{BasicPrefix, IdentifierPrefix, Prefix},
@@ -77,6 +79,12 @@ pub enum KeyTypes {
     X25519KeyAgreementKey2019,
     SchnorrSecp256k1VerificationKey2019,
     EcdsaSecp256k1RecoveryMethod2020,
+}
+
+impl fmt::Display for KeyTypes {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        write!(f, "{:?}", self)
+    }
 }
 
 #[derive(Serialize, Deserialize)]
